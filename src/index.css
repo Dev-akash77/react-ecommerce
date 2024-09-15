@@ -727,6 +727,9 @@ form input {
   font-weight: 450;
   border-radius: 0.3rem;
 }
+.scroll_hide{
+  overflow-y: hidden;
+}
 /*? *********************************************************Contact section end************************************************************ */
 /*? *********************************************************Responsive section start************************************************************ */
 @media (max-width: 1090px) {
@@ -772,7 +775,7 @@ form input {
   }
   .delevary_main {
     width: 100%;
-}
+  }
 }
 @media (max-width: 400px) {
   .main_img {

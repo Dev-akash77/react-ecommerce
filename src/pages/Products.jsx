@@ -8,7 +8,7 @@ const Products = () => {
     <div className='pagestart'>
       <Search />
       <div className="all_filter_products cc mt-3 mb">
-       <div className="container f gap-3 f_p">
+       <div className="container gap-3 f_p">
        <Allfilter />
        <Allproduct />
        </div>

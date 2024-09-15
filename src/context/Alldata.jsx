@@ -17,6 +17,7 @@ export const ProductProvider = ({ children }) => {
   const [brandName, setBrandName] = useState("All");
   const [addNew, setAddNew] = useState(false);
   const [isDuplicate, setIsDuplicate] = useState(false); // New state for handling duplicates
+  const [filterOpen, setFilterOpen] = useState(false)
   const [cartItems, setCartItems] = useState(
     JSON.parse(localStorage.getItem("cartData")) || []
   );
@@ -252,7 +253,14 @@ export const ProductProvider = ({ children }) => {
       });
     });
   };
-
+// ! click to show filter or not
+const handleFilterOpen=()=>{
+  setFilterOpen(!filterOpen)
+}
+//! click to hide filter
+const hideFilterBar = ()=>{
+  setFilterOpen(false)
+}
   return (
     <ProductContext.Provider
       value={{
@@ -279,6 +287,9 @@ export const ProductProvider = ({ children }) => {
         cartItems, //! cart items data
         handleRemoveItem, //! click to remove items from cart
         cartIncr, //! cartIncr
+        handleFilterOpen, //! click to show filter or not
+        filterOpen, //! filter open or not
+        hideFilterBar //! filter bar close
       }}
     >
       {/* //! ToastContainer to display toast notifications */}
