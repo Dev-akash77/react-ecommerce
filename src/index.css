@@ -770,6 +770,9 @@ form input {
     height: 35rem;
     width: 35rem;
   }
+  .delevary_main {
+    width: 100%;
+}
 }
 @media (max-width: 400px) {
   .main_img {
