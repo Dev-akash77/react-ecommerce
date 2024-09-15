@@ -3,7 +3,7 @@ import "../About/about.css"
 const AboutHero = () => {
   return (
     <div className="cc">
-      <div className="container fcb about_left_right">
+      <div className="container about_left_right">
         <div className="left_about c gap-1"data-aos="fade-up-right">
           <p className="a_story">Our Story</p>
           <p className="story_description">

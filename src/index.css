@@ -698,40 +698,90 @@ footer {
 }
 /*? *********************************************************Cart Total section end************************************************************ */
 /*? *********************************************************Contact section Start************************************************************ */
-.contact_sub_heading{
+.contact_sub_heading {
   font-size: 1.5rem;
 }
-form{
+form {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
-.submit{
+.submit {
   grid-column: 1/-1;
   cursor: pointer;
   background-color: var(--red);
   color: var(--white);
-  border: .2rem solid var(--red);
-  transition: .3s ease;
+  border: 0.2rem solid var(--red);
+  transition: 0.3s ease;
 }
-.submit:hover{
+.submit:hover {
   background-color: transparent;
   color: var(--red);
 }
-form input{
+form input {
   padding: 1rem;
-  border: .2rem solid var(--black);
+  border: 0.2rem solid var(--black);
   outline: none;
   color: var(--black);
   font-size: 1.5rem;
   font-weight: 450;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 /*? *********************************************************Contact section end************************************************************ */
 /*? *********************************************************Responsive section start************************************************************ */
-.footer_right {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  row-gap: 4rem;
+@media (max-width: 1090px) {
+  .main_img {
+    height: 40rem;
+    width: 40rem;
+  }
+  .sub_img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+@media (max-width: 980px) {
+  .footer_right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 4rem;
+  }
+}
+@media (max-width: 924px) {
+  .images_details_main {
+    flex-direction: column;
+    align-items: start;
+  }
+  .spimg_main {
+    display: grid;
+    place-items: start;
+  }
+  .sub_images_main {
+    flex-direction: row;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 450px) {
+  .images_details_main {
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 450px) {
+  .main_img {
+    height: 35rem;
+    width: 35rem;
+  }
+}
+@media (max-width: 400px) {
+  .main_img {
+    height: 32rem;
+    width: 32rem;
+  }
+  .sub_img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .p_c_g span {
+    font-size: 1.28rem;
+  }
 }
 /*? *********************************************************Responsive section end************************************************************ */

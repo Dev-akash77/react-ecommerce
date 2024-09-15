@@ -8,7 +8,7 @@ const AllCatagory = () => {
     const [filterCatagoey, setFilterCatagoey] = useState([])
     useEffect(() => {
       let allCatagory = products.map((cur)=>cur.category);
-      let catagory_data= [...new Set(allCatagory)].slice(0,7)
+      let catagory_data= [...new Set(allCatagory)].slice(0,10)
       setFilterCatagoey(catagory_data);     
     }, [products]);
     

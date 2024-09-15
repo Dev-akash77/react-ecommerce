@@ -15,7 +15,7 @@ const AboutSection1 = () => {
   }, []);
 
   return (
-    <div className="sectio_margin mb cc">
+    <div className="sectio_margin mb cc about_four_main">
       <div className="container profit_main">
         <div className="profit_data" data-aos="fade-up">
           <div className="profit_icon_main cc">
