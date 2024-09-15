@@ -166,8 +166,9 @@ main {
   font-weight: 450;
 }
 .speaker_cont {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .shop_now {
   background-color: var(--blue);
@@ -266,6 +267,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
   .speaker_cont {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem;
   }
