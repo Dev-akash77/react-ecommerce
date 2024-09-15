@@ -1,0 +1,323 @@
+/*? ***********************************************************Hero section start*************************************************************** */
+main {
+  margin-top: 10rem;
+}
+.herocont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.apple {
+  align-items: center;
+}
+.apple_logo {
+  font-size: 4rem;
+}
+.applediscount {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.discount {
+  font-size: 4rem;
+  font-weight: 550;
+}
+.herodescription {
+  font-size: 2rem;
+}
+.iphoneback {
+  border-radius: 36rem 18rem 18rem 10rem;
+  width: max-content;
+  padding: 0 2rem;
+  background-color: var(--red);
+}
+.iphoneback img {
+  cursor: pointer;
+}
+.shopnow {
+  width: max-content;
+}
+/*? ***********************************************************Hero section End*************************************************************** */
+/*? ***********************************************************Sectio 1  start*************************************************************** */
+.sectio_margin {
+  margin-top: 5rem;
+}
+.headingsection {
+  font-size: 2.5rem;
+  font-weight: 550;
+}
+.carasoul {
+  background-color: var(--subred);
+  color: var(--black);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flashSale_card_main {
+  margin-top: 2rem;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.view_all {
+  font-size: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.2rem;
+  width: max-content;
+  background-color: var(--red);
+  color: var(--text);
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 0.2rem solid var(--red);
+}
+.view_all:hover {
+  background-color: transparent;
+  color: var(--red);
+}
+.addtocart_main {
+  margin: 3rem 0;
+}
+/*? ***********************************************************Sectio 1  End*************************************************************** */
+
+.mb {
+  margin-bottom: 10rem;
+}
+
+/*? ***********************************************************All Satagory  Start*************************************************************** */
+.catagory_main_section {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3rem;
+}
+.catagory_margin {
+  margin-top: 6rem;
+}
+.catagory_main {
+  border: 0.2rem solid var(--black);
+  font-size: 1.5rem;
+  height: 13rem;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-weight: 450;
+  transition: 0.3s ease;
+}
+.catagory_icon {
+  font-size: 3.5rem;
+}
+.catagory_main_data {
+  transition: 0.3 ease;
+  height: 100%;
+  width: 100%;
+}
+.catagory_main:hover {
+  background-color: var(--red);
+  border: 0.2rem solid var(--red);
+}
+.catagory_main:hover .catagory_main_data {
+  color: var(--white);
+}
+/*? ***********************************************************All Satagory  End*************************************************************** */
+/*? *********************************************************speaker_main catagory start************************************************************** */
+.speaker_cont {
+  background-color: var(--black);
+  color: var(--white);
+  height: 40rem;
+  padding: 0 5rem;
+}
+.aiarbuds_image_main img {
+  width: 90%;
+}
+.aiarbuds_image_main {
+  width: 40rem;
+}
+.spc {
+  width: 50%;
+}
+.spcc {
+  font-size: 1.5rem;
+  color: var(--green);
+}
+.enhance {
+  font-size: 5rem;
+  font-weight: 500;
+  width: 100%;
+}
+.foursd {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+.four_data {
+  background-color: var(--white);
+  color: var(--black);
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: 550;
+  cursor: pointer;
+}
+.four_data span {
+  color: var(--deepGrey);
+  font-weight: 450;
+}
+.speaker_cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.shop_now {
+  background-color: var(--blue);
+  padding: 1rem 3rem;
+  border-radius: 0.2rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  width: max-content;
+  cursor: pointer;
+}
+.rfd_logo {
+  font-size: 4rem;
+}
+.rfd_dis_main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.dis_heading {
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+.dis_sub_heading {
+  font-size: 1.2rem;
+}
+.return_fast_dilevary_main {
+  gap: 15rem;
+  margin-top: 7rem;
+}
+/*? *********************************************************speaker_main catagory END************************************************************** */
+/*! *********************************************************RESPONSIVE SECTion Start************************************************************** */
+@media (max-width: 1080px) {
+  .iphoneback img {
+    width: 38rem;
+  }
+  .herocont {
+    gap: 2rem;
+  }
+  .flashSale_card_main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .catagory_main_section {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .speaker_cont {
+    height: 50rem;
+  }
+}
+@media (max-width: 930px) {
+  .iphoneback img {
+    width: 45rem;
+  }
+  .herocont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .right {
+    grid-row: 1/2;
+    background: var(--red);
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .catagory_main_section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .enhance {
+    font-size: 3rem;
+  }
+  .return_fast_dilevary_main {
+    gap: 5rem;
+  }
+}
+@media (max-width: 745px) {
+  .iphoneback img {
+    width: 90%;
+  }
+  .iphoneback {
+    border-radius: 3rem;
+    width: 100%;
+  }
+  .flashSale_card_main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .spc {
+    width: 100%;
+  }
+  .speaker_cont {
+    height: 100%;
+  }
+  .return_fast_dilevary_main {
+    gap: 1rem;
+  }
+}
+@media (max-width: 590px) {
+  .catagory_main_section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .speaker_cont {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+  }
+  .aiarbuds_image_main img {
+    width: 60%;
+  }
+  .aiarbuds_image_main {
+    grid-row: 1/2;
+    width: 100%;
+  }
+  .foursd {
+    place-items: self-start;
+  }
+  .return_fast_dilevary_main {
+    flex-direction: column;
+  }
+}
+@media (max-width: 430px) {
+  .right {
+    border-radius: 0.5rem;
+  }
+  .flashSale_card_main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .catagory_main_section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer_four_cont {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .discount {
+    font-size: 3rem;
+  }
+  .herodescription {
+    font-size: 1.5rem;
+  }
+  .headingsection {
+    font-size: 2rem;
+  }
+  .view_all {
+    padding: 0.4rem 1.5rem;
+  }
+  .four_data {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 1rem;
+  }
+  .enhance {
+    font-size: 2.8rem;
+  }
+}
+/*! *********************************************************RESPONSIVE SECTion END************************************************************** */
