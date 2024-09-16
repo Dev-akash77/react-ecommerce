@@ -621,7 +621,7 @@ footer {
   padding: 0 2rem;
   border-radius: 0.3rem;
 }
-.cart_img_name{
+.cart_img_name {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -729,7 +729,7 @@ form input {
   font-weight: 450;
   border-radius: 0.3rem;
 }
-.scroll_hide{
+.scroll_hide {
   overflow-y: hidden;
 }
 /*? *********************************************************Contact section end************************************************************ */
@@ -766,18 +766,18 @@ form input {
   }
 }
 @media (max-width: 770px) {
-  .cart_data_main{
+  .cart_data_main {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(4,max-content);
+    grid-template-columns: repeat(4, max-content);
   }
-  .cart_img_name{
+  .cart_img_name {
     justify-content: start;
   }
 }
 @media (max-width: 600px) {
-  .cart_data_main{
-    grid-template-columns: repeat(3,1fr);
+  .cart_data_main {
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 2rem;
     gap: 1rem;
   }
@@ -793,39 +793,41 @@ form input {
   .delevary_main {
     width: 100%;
   }
-  .cart_data_main{
-    grid-template-columns: repeat(1,1fr);
+  .cart_data_main {
+    grid-template-columns: repeat(1, 1fr);
     place-items: center;
     padding-top: 1rem;
   }
-  .cart_catagory{
+  .cart_catagory {
     grid-row: 1/2;
   }
-  .cart_remove,.cidc{
+  .cart_remove,
+  .cidc {
     width: 100%;
   }
-  .idc{
+  .idc {
     justify-content: space-between;
   }
-  .pidc{
+  .pidc {
     width: 50%;
   }
-  .quantity{
+  .quantity {
     align-items: center;
     justify-content: center;
-    width:50%;
+    width: 50%;
   }
-  .dicrement,.increment{
+  .dicrement,
+  .increment {
     width: 25%;
   }
-  .cart_price{
+  .cart_price {
     font-size: 2rem;
   }
-  .cart_img_name img{
+  .cart_img_name img {
     height: 12rem;
     width: 12rem;
   }
-  .custom-toast{
+  .custom-toast {
     right: 1rem;
     top: 8rem;
   }
@@ -842,5 +844,15 @@ form input {
   .p_c_g span {
     font-size: 1.28rem;
   }
+}
+@media (max-width: 500px) {
+  form {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 3rem;
+  }
+.sectio_margin {
+  margin-top: 3rem;
+}
+
 }
 /*? *********************************************************Responsive section end************************************************************ */

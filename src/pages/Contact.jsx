@@ -14,7 +14,7 @@ const Contact = () => {
         <p className="contact_sub_heading mt-1">
           Get in touch with us. We are always here to help you.
         </p>
-        <form className="sectio_margin mb">
+        <form className="sectio_margin">
           <input type="text" placeholder="First Name" required />
           <input type="text" placeholder="Last Name" required />
           <input type="email" placeholder="Email" required />
