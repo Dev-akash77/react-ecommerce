@@ -38,7 +38,7 @@ const Cart = () => {
               return (
                 <div className="cart_data_main fcb" key={cur.id}>
                   <div
-                    className="cart_img_name fc gap-1"
+                    className="cart_img_name gap-1"
                     onClick={() => handleLinkClick(cur.id)}
                   >
                     <img src={cur.images[0].img} alt={cur.name} />
@@ -47,9 +47,9 @@ const Cart = () => {
                   <p className="cart_catagory">{cur.category}</p>
                   <p className="cart_price">₹{cur.price}</p>{" "}
                   {/* Total price based on quantity */}
-                  <div className="idc f">
+                  <div className="idc cidc f">
                     <p
-                      className={`dicrement cc ${
+                      className={`dicrement cc cdec ${
                         incrDcr === "-" && "activeid"
                       }`}
                       onClick={() => cartIncr("-", cur.id)}

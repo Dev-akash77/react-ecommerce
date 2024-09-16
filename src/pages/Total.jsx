@@ -28,7 +28,7 @@ const Total = ({ data }) => {
           <div className="total_data_price fcb">
             Subtotal: <p className="tp">₹{allprice}</p>
           </div>
-          <hr />
+          {/* <hr /> */}
         </div>
 
         <div className="total_data c gap-1">

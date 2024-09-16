@@ -100,7 +100,7 @@ const ProductDetails = () => {
             </div>
             <p className="shl"></p>
             <div className="idb f gap-3">
-              <div className="idc f">
+              <div className="idc pidc f">
                 <p
                   className={`dicrement cc ${incrDcr == "-" && "activeid"}`}
                   onClick={() => {
